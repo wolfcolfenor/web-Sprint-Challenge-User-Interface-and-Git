@@ -66,12 +66,17 @@ p {
     line-height: 1.4;
 }
 
-.container {
+.header {
     width: 800px;
     margin: 0 auto;
 }
 
-.top-content {
+div.container {
+    width: 800px;
+    margin: 0 auto;
+}
+
+section.top-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -79,7 +84,7 @@ p {
     border-bottom: 1px dashed black;
 }
 
-.top-content .text-container {
+div.top-content .text-container {
     width: 48%;
     padding: 0 1%;
     padding-bottom: 20px;  
@@ -104,7 +109,7 @@ p {
 .middle-content .boxes .box {
     width: 12.5%;
     height: 100px;
-    background: black;
+    background-color: black;
     margin: 20px 2.5%;
     color: white;
     display: flex;
@@ -112,35 +117,42 @@ p {
     justify-content: center;
 }
 
-.bottom-content {
+.bottom-content .text-container {
+    padding-right: 4%;
     display: flex;
     margin: 0 2% 20px;
     justify-content: space-around;
 }
 
-.bottom-content .text-container {
-    padding-right: 4%;
+.bottom-content .text-container p {
+    display: flex;
+    flex-wrap: wrap;
+    border 0;
+    margin: 0 2% 20px;
+    justify-content: space-around;
+    align-content: space-around;
+    width: 33%;
 }
 
 .bottom-content .text-container:last-child {
     padding-right: 0;
 }
 
-footer {
+.footer {
     width: 100%;
     background: black;
 }
 
-footer nav {
+div.nav {
     width: 60%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 2%;
-    font-size: 14px;
+    font-size: 14px;  
 }
 
-footer nav a {
+div.nav a {
     color: white;
     text-decoration: none;
 }
